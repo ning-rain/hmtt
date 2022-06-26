@@ -16,7 +16,8 @@
           { pattern: /^(?:(?:\+|00)86)?1\d{10}$/, message: '不符合手机格式' },
         ]"
       >
-        <i class="toutiao toutiao-shouji" slot="left-icon"></i>
+        <!-- <i class="toutiao toutiao-shouji" slot="left-icon"></i> -->
+        <MyIcon :name="shouji" slot="left-icon"></MyIcon>
       </van-field>
       <van-field
         v-model.trim="code"

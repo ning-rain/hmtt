@@ -7,10 +7,12 @@ import Vant from 'vant'
 import 'vant/lib/index.less'
 import 'amfe-flexible'
 import '@/styles/icon.less'
-
+// 引入自建图标组件
+import MyIcon from '@/components/MyIcon'
 Vue.config.productionTip = false
 Vue.use(Vant)
 new Vue({
+  MyIcon,
   router,
   store,
   render: h => h(App)
